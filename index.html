@@ -9,13 +9,27 @@
             margin: 0;
             padding: 0;
             display: flex;
-            justify-content: center;
+            flex-direction: column;
             align-items: center;
-            height: 100vh;
-            background: linear-gradient(to right, #3498db, #8e44ad); /* Adjust gradient colors as needed */
+            justify-content: center;
+            min-height: 100vh;
+            background: linear-gradient(45deg, #3498db, #8e44ad, #3498db, #8e44ad);
+            background-size: 400% 400%;
+            animation: gradientAnimation 10s ease infinite;
             color: #fff;
-            text-align: center;
             font-family: 'Arial', sans-serif;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+            50% {
+                background-position: 100% 50%;
+            }
+            100% {
+                background-position: 0% 50%;
+            }
         }
 
         .card {
@@ -61,6 +75,16 @@
             color: #0077b5;
             margin-bottom: 10px;
         }
+
+        #title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        #subtext {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
     </style>
 </head>
 <body>
@@ -68,9 +92,12 @@
         <i id="linkedinIcon" class="fab fa-linkedin"></i>
         <h1>Vraj Bhatt</h1>
         <p>Technology Consultant | DevOps | Full Stack | AWS Certified Solution Architect | k8s | ELK | Prometheus | Grafana</p>
+        <div id="title">Title: Vraj Bhatt</div>
+        <div id="subtext">Technology Consultant | DevOps | Full Stack | AWS Certified Solution Architect | k8s | ELK | Prometheus | Grafana</div>
         <a id="linkedinButton" href="https://www.linkedin.com/in/YOUR_PUBLIC_PROFILE_URL" target="_blank">LinkedIn Profile</a>
-        <a id="githubIcon" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"><i class="fab fa-github"></i> GitHub</a>
     </div>
+
+    <a id="githubIcon" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"><i class="fab fa-github"></i> GitHub</a>
 
     <!-- Font Awesome CDN for the icons -->
     <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
