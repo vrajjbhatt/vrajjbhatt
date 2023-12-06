@@ -37,15 +37,23 @@
             margin-bottom: 20px;
         }
 
-        #linkedinButton {
+        #linkedinButton, #githubIcon {
             padding: 10px 20px;
             font-size: 1em;
-            background-color: #0077b5;
-            color: #fff;
-            text-decoration: none;
             border-radius: 5px;
             cursor: pointer;
             display: inline-block;
+            margin: 5px;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        #linkedinButton {
+            background-color: #0077b5;
+        }
+
+        #githubIcon {
+            background-color: #333;
         }
 
         #linkedinIcon {
@@ -58,12 +66,13 @@
 <body>
     <div class="card">
         <i id="linkedinIcon" class="fab fa-linkedin"></i>
-        <h1>Your Name</h1>
-        <p>Connect with me on LinkedIn to stay updated!</p>
+        <h1>Vraj Bhatt</h1>
+        <p>Technology Consultant | DevOps | Full Stack | AWS Certified Solution Architect | k8s | ELK | Prometheus | Grafana</p>
         <a id="linkedinButton" href="https://www.linkedin.com/in/YOUR_PUBLIC_PROFILE_URL" target="_blank">LinkedIn Profile</a>
+        <a id="githubIcon" href="https://github.com/YOUR_GITHUB_USERNAME" target="_blank"><i class="fab fa-github"></i> GitHub</a>
     </div>
 
-    <!-- Font Awesome CDN for the LinkedIn icon -->
+    <!-- Font Awesome CDN for the icons -->
     <script src="https://kit.fontawesome.com/your-fontawesome-kit-id.js" crossorigin="anonymous"></script>
 </body>
 </html>
