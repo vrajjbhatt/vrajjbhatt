@@ -28,22 +28,19 @@
             margin-bottom: 40px;
         }
 
-        #redirectButton, #linkedinBadge {
-            padding: 10px 20px;
-            font-size: 1.2em;
-            color: #fff;
-            text-decoration: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin-right: 10px;
+        #linkedinBox {
+            width: 80vw;
+            height: 60vh;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
         }
 
-        #redirectButton {
-            background-color: #2ecc71;
-        }
-
-        #linkedinBadge {
-            background-color: #0077b5;
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -51,12 +48,9 @@
     <div>
         <h1>Your Name</h1>
         <p>Welcome to my tech portfolio. I am passionate about...</p>
-        <a id="redirectButton" href="https://www.youtube.com/" target="_blank">Redirect to YouTube</a>
-        
-        <!-- Replace 'YOUR_PUBLIC_PROFILE_URL' with the actual public profile URL -->
-        <script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
-        <div id="linkedinBadge" class="LI-profile-badge" data-version="v1" data-size="medium" data-locale="en_US" data-type="horizontal" data-theme="dark" data-vanity="YOUR_PUBLIC_PROFILE_URL">
-            <a class="LI-simple-link" href='https://www.linkedin.com/in/YOUR_PUBLIC_PROFILE_URL?trk=profile-badge'>LinkedIn Profile</a>
+        <div id="linkedinBox">
+            <!-- Replace 'YOUR_PUBLIC_PROFILE_URL' with the actual public profile URL -->
+            <iframe src="https://www.linkedin.com/in/YOUR_PUBLIC_PROFILE_URL" frameborder="0"></iframe>
         </div>
     </div>
 </body>
