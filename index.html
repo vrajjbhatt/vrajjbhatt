@@ -28,15 +28,33 @@
             margin-bottom: 40px;
         }
 
-        #redirectButton {
+        #redirectButton, #youtubeBox {
             padding: 10px 20px;
             font-size: 1.2em;
-            background-color: #2ecc71;
             color: #fff;
             text-decoration: none;
-            border: none;
             border-radius: 5px;
             cursor: pointer;
+        }
+
+        #redirectButton {
+            background-color: #2ecc71;
+            margin-right: 10px;
+        }
+
+        #youtubeBox {
+            width: 80vw;
+            height: 60vh;
+            overflow: hidden;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+        }
+
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
@@ -45,6 +63,9 @@
         <h1>Your Name</h1>
         <p>Welcome to my tech portfolio. I am passionate about...</p>
         <a id="redirectButton" href="https://www.youtube.com/" target="_blank">Redirect to YouTube</a>
+        <div id="youtubeBox">
+            <iframe src="https://www.youtube.com/" frameborder="0" allowfullscreen></iframe>
+        </div>
     </div>
 </body>
 </html>
