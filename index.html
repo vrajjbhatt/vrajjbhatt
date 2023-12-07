@@ -44,11 +44,13 @@
         h1 {
             font-size: 2em;
             margin-bottom: 10px;
+            color: #303234;
         }
 
         p {
             font-size: 1.2em;
             margin-bottom: 20px;
+            color: #303234;
         }
 
         #linkedinButton, #githubIcon {
@@ -85,13 +87,19 @@
             font-size: 1.2em;
             margin-bottom: 20px;
         }
+
+        @media screen and (max-width: 600px) {
+            .card {
+                max-width: 80%;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="card">
         <i id="linkedinIcon" class="fab fa-linkedin"></i>
-        <h1 style="color: #303234">Vraj Bhatt</h1>
-        <p style="color: #303234">Technology Consultant | DevOps | Full Stack | AWS Certified Solution Architect | k8s | ELK | Prometheus | Grafana</p>
+        <h1>Vraj Bhatt</h1>
+        <p>Technology Consultant | DevOps | Full Stack | AWS Certified Solution Architect | k8s | ELK | Prometheus | Grafana</p>
         
         <a id="linkedinButton" href="https://www.linkedin.com/in/vraj-bhatt-090835133" target="_blank">LinkedIn Profile</a>
     </div>
